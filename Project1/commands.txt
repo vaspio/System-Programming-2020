@@ -1,0 +1,19 @@
+/globalDiseaseStats 19-03-1999 22-03-2007
+
+/diseaseFrequency ATLL 19-03-1999 22-03-2007 Greece
+/diseaseFrequency SARS-COV-2 19-03-1999 22-03-2007 Greece
+
+/insertPatientRecord 52000 Pitos Loki ATLL Greece 19-03-1999 22-03-2007
+
+/recordPatientExit 45 22-03-2007
+/recordPatientExit 5 22-03-2007
+
+/numCurrentPatients MERS-COV
+
+/topk-Diseases 3 Greece
+
+/topk-Countries 3 EVD
+
+./validator.sh small.txt 10 10 80
+
+./diseaseMonitor -p small.txt -h1 10 -h2 10 -b 80
