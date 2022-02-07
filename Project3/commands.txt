@@ -1,0 +1,27 @@
+./create_infiles.sh Countries.txt Diseases.txt Database 5 5
+time ./create_infiles.sh Countries.txt Diseases.txt Database 5 5
+valgrind --trace-children=yes ./diseaseAggregator -w 4 -b 50 -i Database
+valgrind --trace-children=yes --leak-check=full ./diseaseAggregator -w 4 -b 50 -i Database
+valgrind --trace-children=yes  --leak-check=full --show-leak-kinds=all --track-origins=yes ./diseaseAggregator -w 4 -b 50 -i Database
+
+valgrind --trace-children=yes --leak-check=full --show-leak-kinds=all ./diseaseAggregator -w 4 -b 50 -s 127.0.0.1 -p 2500 -i Database
+
+/diseaseFrequency hha 4-5-2121 5-65-1222
+/diseaseFrequency H1N1 19-03-1999 22-03-2015 Greece
+/diseaseFrequency COVID-2019 19-03-1999 22-03-2015 Greece
+/diseaseFrequency PID 19-03-1999 22-03-2015 Greece
+
+/searchPatientRecord 24
+
+/topk-AgeRanges 2 Greece PID 19-03-1999 22-03-2015
+/topk-AgeRanges 2 China COVID-2019 19-03-1999 22-03-2015
+/topk-AgeRanges 4 Greece COVID-2019 19-03-1999 22-03-2015
+
+/listCountries
+
+/numPatientAdmissions PID 19-03-1999 22-03-2015 Greece
+
+/numPatientDischarges PID 19-03-1999 22-03-2015 Greece
+
+/intquitWorker 2
+

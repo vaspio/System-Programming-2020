@@ -1,0 +1,11 @@
+/searchPatientRecord 22
+/diseaseFrequency COVID-2019 19-03-1999 22-03-2015 Greece
+/searchPatientRecord 3
+/numPatientDischarges PID 19-03-1999 22-03-2015 Greece
+/diseaseFrequency H1N1 19-03-1999 22-03-2015 Greece
+/diseaseFrequency PID 19-03-1999 22-03-2015 Greece
+/topk-AgeRanges 2 China COVID-2019 19-03-1999 22-03-2015
+/topk-AgeRanges 4 Greece COVID-2019 19-03-1999 22-03-2015
+/topk-AgeRanges 2 Greece PID 19-03-1999 22-03-2015
+/searchPatientRecord 3
+/exit
